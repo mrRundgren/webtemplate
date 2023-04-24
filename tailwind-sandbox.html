@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind sandbox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            *, *::before, *::after {
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        @layer components { }
+        @layer utilities { }
+    </style>
+</head>
+<body class="">
+    <div id="app">
+        <div class="p-4 mx-auto max-w-7xl">
+            <h1 class="mb-6 text-3xl font-bold">Tailwind sandbox</h1>
+            <p>
+                <strong class="block my-4">Useful links:</strong>
+                <ul class="grid gap-2">
+                    <li class="flex flex-row rounded-lg hover:bg-black/10">
+                        <a href="https://tailwindcss.com/" target="_tailwind" class="flex-1 px-4 py-3">tailwind.com</a>
+                    </li>
+                    <hr class="border-t" />
+                    <li class="flex flex-row rounded-lg hover:bg-black/10">
+                        <a href="https://tailwindcss.com/docs/installation/play-cdn" target="_tailwind" class="flex-1 px-4 py-3">Play CDN</a>
+                    </li>
+                    <hr class="border-t" />
+                    <li class="flex flex-row rounded-lg hover:bg-black/10">
+                        <a href="https://tailwindcss.com/docs/configuration" target="_tailwind" class="flex-1 px-4 py-3">Configuration</a>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <script>
+        tailwind.config = {
+            theme: {
+                content: [],
+                theme: {
+                    extend: {},
+                },
+                plugins: [],
+            }
+        }
+      </script>
+</body>
+</html>
